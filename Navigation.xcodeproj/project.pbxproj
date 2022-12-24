@@ -15,6 +15,8 @@
 		AD5FF26229564EAF0076E052 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD5FF26029564EAF0076E052 /* LaunchScreen.storyboard */; };
 		AD5FF26A29564F080076E052 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AD5FF26929564F080076E052 /* README.md */; };
 		AD6209AA2956C4F3005649C1 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6209A92956C4F3005649C1 /* EditViewController.swift */; };
+		AD6209AD2956E9F2005649C1 /* lamp-off.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6209AB2956E9F2005649C1 /* lamp-off.png */; };
+		AD6209AE2956E9F2005649C1 /* lamp-on.png in Resources */ = {isa = PBXBuildFile; fileRef = AD6209AC2956E9F2005649C1 /* lamp-on.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		AD5FF26329564EAF0076E052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD5FF26929564F080076E052 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		AD6209A92956C4F3005649C1 /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
+		AD6209AB2956E9F2005649C1 /* lamp-off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-off.png"; sourceTree = "<group>"; };
+		AD6209AC2956E9F2005649C1 /* lamp-on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lamp-on.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +73,8 @@
 				AD5FF25E29564EAF0076E052 /* Assets.xcassets */,
 				AD5FF26029564EAF0076E052 /* LaunchScreen.storyboard */,
 				AD5FF26329564EAF0076E052 /* Info.plist */,
+				AD6209AB2956E9F2005649C1 /* lamp-off.png */,
+				AD6209AC2956E9F2005649C1 /* lamp-on.png */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -131,9 +137,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD6209AD2956E9F2005649C1 /* lamp-off.png in Resources */,
 				AD5FF26229564EAF0076E052 /* LaunchScreen.storyboard in Resources */,
 				AD5FF25F29564EAF0076E052 /* Assets.xcassets in Resources */,
 				AD5FF26A29564F080076E052 /* README.md in Resources */,
+				AD6209AE2956E9F2005649C1 /* lamp-on.png in Resources */,
 				AD5FF25D29564EAF0076E052 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

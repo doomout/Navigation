@@ -2,13 +2,17 @@
 import UIKit
 
 class ViewController: UIViewController, EditDelegate {
-   
+    let imgOn = UIImage(named: "lamp-on.png")
+    let imgOff = UIImage(named: "lamp-off.png")
+    var isOn = true
     
-
+    @IBOutlet var imgView: UIImageView!
+    
     @IBOutlet var txMessage: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        imgView.image = imgOn
     }
     
     //prepare 함수는 해당 세그웨이가 해당 뷰 컨트롤러로 전환되기 직전에 호출되는 함수며 데이터 전달에 사용
@@ -22,11 +26,22 @@ class ViewController: UIViewController, EditDelegate {
             editViewController.textWayValue = "segue : use Bar button"
         }
         editViewController.textMessage = txMessage.text!
+        editViewController.isOn = isOn
         editViewController.delegate = self
     }
     
     func didMessageEditDone(_ controller: EditViewController, message: String) {
         txMessage.text = message
+    }
+    
+    func didImageOnOffDone(_ controller: EditViewController, isOn: Bool) {
+        if isOn {
+            imgView.image = imgOn
+            self.isOn = true
+        } else {
+            imgView.image = imgOff
+            self.isOn = false
+        }
     }
 }
 

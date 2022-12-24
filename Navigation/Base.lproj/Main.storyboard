@@ -54,6 +54,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="imgView" destination="RSB-qN-NCn" id="4Vn-2N-bgy"/>
                         <outlet property="txMessage" destination="Ulb-Oy-ipy" id="vvw-Kl-dcP"/>
                     </connections>
                 </viewController>
@@ -101,6 +102,9 @@
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUo-5M-k85">
                                 <rect key="frame" x="293" y="168" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="swImageOnOff:" destination="zFM-hP-lbJ" eventType="valueChanged" id="y6X-o3-qWR"/>
+                                </connections>
                             </switch>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="켜기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIv-Ax-SoU">
                                 <rect key="frame" x="254" y="173" width="30" height="21"/>
@@ -116,6 +120,7 @@
                     <navigationItem key="navigationItem" title="수정화면" id="4wJ-IB-bh7"/>
                     <connections>
                         <outlet property="lblWay" destination="Rdw-ps-gQd" id="Kuo-Tf-ctA"/>
+                        <outlet property="swIsOn" destination="JUo-5M-k85" id="t7Y-2Q-AJK"/>
                         <outlet property="txMessage" destination="5p0-dN-V6U" id="KF0-zQ-0kv"/>
                     </connections>
                 </viewController>
