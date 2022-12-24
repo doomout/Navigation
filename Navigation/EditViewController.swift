@@ -9,7 +9,7 @@ protocol EditDelegate {
 class EditViewController: UIViewController {
     var textWayValue: String = ""
     var textMessage: String = ""
-    var delegate: EditDelegate?
+    var delegate: EditDelegate?  //델리게이트는 어떤 값이 들어갈지 모르기에 옵셔널 변수로 선언
     var isOn = false
     
     @IBOutlet var lblWay: UILabel!
@@ -28,8 +28,8 @@ class EditViewController: UIViewController {
 
     @IBAction func btnDona(_ sender: UIButton) {
         if delegate != nil {
-            delegate?.didMessageEditDone(self, message: txMessage.text!)
-            delegate?.didImageOnOffDone(self, isOn: isOn)
+            delegate?.didMessageEditDone(self, message: txMessage.text!) //메세지를 주고 받는 델리게이트
+            delegate?.didImageOnOffDone(self, isOn: isOn) //전구 온,오프를 주고 받는 델리게이트
         }
         //세그웨이 추가할 때 Show 형태로 했기에 되돌아 갈 땐 pop 형태로 해야 한다.
         _ = navigationController?.popViewController(animated: true)

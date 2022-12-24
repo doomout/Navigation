@@ -7,8 +7,8 @@ class ViewController: UIViewController, EditDelegate {
     var isOn = true
     
     @IBOutlet var imgView: UIImageView!
-    
     @IBOutlet var txMessage: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,14 +19,13 @@ class ViewController: UIViewController, EditDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let editViewController = segue.destination as! EditViewController
         
-        
         if segue.identifier == "editButton" { //버튼을 클릭한 경우
             editViewController.textWayValue = "segue : use button"
         } else if segue.identifier == "editBarButton" { //바 버튼을 클릭한 경우
             editViewController.textWayValue = "segue : use Bar button"
         }
-        editViewController.textMessage = txMessage.text!
-        editViewController.isOn = isOn
+        editViewController.textMessage = txMessage.text! //텍스트 데이터 주고 받기
+        editViewController.isOn = isOn //스위치 온오프 데이터 주고 받기
         editViewController.delegate = self
     }
     
